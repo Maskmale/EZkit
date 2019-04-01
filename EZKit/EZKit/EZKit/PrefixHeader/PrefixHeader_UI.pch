@@ -1,0 +1,34 @@
+//
+//  PrefixHeader_UI.pch
+//  Uboard
+//
+//  Created by Maskmale on 2019/1/11.
+//  Copyright © 2019 Maskmale. All rights reserved.
+//
+
+#ifndef PrefixHeader_UI_pch
+#define PrefixHeader_UI_pch
+
+// 状态栏高度+导航栏高度
+#define K_NavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height + self.navigationController.navigationBar.frame.size.height)
+
+/** ** ** ** ** ** ** ** UI 适配 ** ** ** ** ** ** ** **/
+
+#define K_ScreenW [UIScreen mainScreen].bounds.size.width
+#define K_ScreenH [UIScreen mainScreen].bounds.size.height
+
+#define K_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define K_DefultSize (K_IS_IPHONE ? 375.00 : 768.00)
+
+// 判断设配状态（竖屏 / 横屏）
+#define K_DeviceISVertical ((K_ScreenH > K_ScreenW) ? 1 : 0)
+
+#define K_DeviceDefultSize (K_DeviceISVertical ? K_ScreenH : K_ScreenW)
+
+#define K_Scale (K_DeviceISVertical ? (K_ScreenW/K_DefultSize) : (K_ScreenH/K_DefultSize))
+
+#define RuntimeSize(R) ((R)*K_Scale)
+/** ** ** ** ** ** ** ** UI 适配 ** ** ** ** ** ** ** **/
+
+#endif /* PrefixHeader_UI_pch */

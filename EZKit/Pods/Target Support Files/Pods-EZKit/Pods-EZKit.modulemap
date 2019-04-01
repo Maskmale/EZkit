@@ -1,0 +1,6 @@
+framework module Pods_EZKit {
+  umbrella header "Pods-EZKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

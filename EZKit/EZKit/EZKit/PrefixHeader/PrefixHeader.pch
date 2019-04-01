@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  Uboard
+//
+//  Created by Maskmale on 2019/1/11.
+//  Copyright © 2019 Maskmale. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+/** 获取APP名称 */
+#define APP_NAME ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"])
+
+/** 程序版本号 */
+#define APP_VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+/** 获取APP build版本 */
+#define APP_BUILD ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"])
+
+
+
+#import "PrefixHeader_UI.pch"
+#import "PrefixHeader_Debug.pch"
+
+
+#endif /* PrefixHeader_pch */

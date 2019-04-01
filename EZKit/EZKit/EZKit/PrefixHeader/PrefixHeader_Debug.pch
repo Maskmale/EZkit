@@ -1,0 +1,21 @@
+//
+//  PrefixHeader_Debug.pch
+//  Uboard
+//
+//  Created by Maskmale on 2019/1/11.
+//  Copyright © 2019 Maskmale. All rights reserved.
+//
+
+#ifndef PrefixHeader_Debug_pch
+#define PrefixHeader_Debug_pch
+
+/** ** ** ** ** ** ** ** DEBUG ** ** ** ** ** ** ** **/
+#define EZFunc EZLog(@"%s",__func__)
+#ifdef DEBUG // 调试
+#define EZLog(...) NSLog(__VA_ARGS__);
+#else // 发布
+#define EZLog(...)
+#endif
+/** ** ** ** ** ** ** ** DEBUG ** ** ** ** ** ** ** **/
+
+#endif /* PrefixHeader_Debug_pch */

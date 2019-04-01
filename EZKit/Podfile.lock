@@ -1,0 +1,28 @@
+PODS:
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebDAV (3.4.2):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - GCDWebServer
+  - GCDWebServer/WebDAV
+  - GCDWebServer/WebUploader
+  - Masonry
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GCDWebServer
+    - Masonry
+
+SPEC CHECKSUMS:
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 4fee6e546d64a3232b5fd0d2c22eede4a6824833
+
+COCOAPODS: 1.5.3
