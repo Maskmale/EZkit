@@ -3,7 +3,8 @@ use_frameworks!
 
 target 'EZKit' do
 	pod 'Masonry'
-  	pod "GCDWebServer"
- 	pod "GCDWebServer/WebUploader"
- 	pod "GCDWebServer/WebDAV"
+  	pod 'GCDWebServer'
+ 	pod 'GCDWebServer/WebUploader'
+    pod 'GCDWebServer/WebDAV'
+    pod 'SSZipArchive'
 end

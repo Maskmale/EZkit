@@ -7,22 +7,26 @@ PODS:
   - GCDWebServer/WebUploader (3.4.2):
     - GCDWebServer/Core
   - Masonry (1.1.0)
+  - SSZipArchive (2.1.4)
 
 DEPENDENCIES:
   - GCDWebServer
   - GCDWebServer/WebDAV
   - GCDWebServer/WebUploader
   - Masonry
+  - SSZipArchive
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - GCDWebServer
     - Masonry
+    - SSZipArchive
 
 SPEC CHECKSUMS:
   GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
 
-PODFILE CHECKSUM: 4fee6e546d64a3232b5fd0d2c22eede4a6824833
+PODFILE CHECKSUM: 0cb6be3d08ff0b77e64e1bdd5e7924dc2a3f5789
 
 COCOAPODS: 1.5.3
